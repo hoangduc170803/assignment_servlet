@@ -1,0 +1,181 @@
+/* 
+    Created on : Jul 4, 2024, 3:54:50 PM
+    Author     : daihi
+*/
+
+/* POPPINS FONT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url("Image/z5453741807599_702b9c37efed9274d9707106171728e4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll; /* Add vertical scrollbar */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: #888888 #f0f0f0; /* For Firefox */
+}
+
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners of the thumb */
+    border: 2px solid #f0f0f0; /* Border around the thumb */
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+    background: rgba(39, 39, 39, 0.4);
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background: linear-gradient(rgba(39,39,39, 0.6), transparent);
+    z-index: 100;
+}
+
+.nav-logo img {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-menu ul {
+    display: flex;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.link, .active {
+    border-bottom: 2px solid #fff;
+}
+
+/* Adjusted form-box to center the form and add space top and bottom */
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; /* Sử dụng min-height thay vì height để form có thể căn giữa khi nội dung ít */
+    width: 100%;
+    padding: 50px 0; /* Tăng padding để có khoảng cách trên và dưới form */
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước tổng thể của form-box */
+}
+
+.form-container {
+    width: 400px;
+    padding: 40px; /* Giữ nguyên padding bên trong container */
+    background: rgba(173, 216, 230, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Để lại shadow cho hiệu ứng chiều sâu */
+}
+
+.form-container header {
+    color: #333; /* Dark Gray for better readability */
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    color: black; /* Dark Gray for better readability */
+    font-size: 14px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    background: white; /* Light Blue background */
+    color: black; /* Dark Gray text */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 5px;
+}
+
+.input-box input::placeholder {
+   color: rgba(255, 255, 0, 0.7);
+/* Light Gray placeholder text */
+}
+
+.input-box input:focus {
+   background: rgba(245, 245, 220, 0.7);
+/* Slightly darker Light Blue background on focus */
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: red; /* Dark Gray text */
+    background: rgba(245, 245, 220, 0.9); /* Beige background */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit:hover {
+    background: rgba(245, 245, 220, 0.7); /* Slightly darker Beige background on hover */
+}
+
+.message {
+    color: #28a745; /* Green color for success */
+    background-color: #d4edda; /* Light green background */
+    border: 1px solid #c3e6cb; /* Border color */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.error-message{
+    color: red;
+    }
+
+.success-message {
+    color: red;
+    }
+
